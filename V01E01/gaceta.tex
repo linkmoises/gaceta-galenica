@@ -6,16 +6,15 @@
 \usepackage{microtype}
 \usepackage{newspaper}
 \usepackage{multicol}
-
-%%\usepackage{url}
-%%\usepackage{hyperref}
-%%\usepackage{xcolor}
-%%\hypersetup{
-%%    colorlinks,
-%%    linkcolor={red!50!black},
-%%    citecolor={blue!50!black},
-%%    urlcolor={blue!80!black}
-%%}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
 
 %% ============================================================================
 %% Referencias
@@ -58,7 +57,7 @@
 \SetPaperName{Gaceta Galénica}
 \SetHeaderName{Gaceta Galénica}
 \SetPaperLocation{Ciudad de Panamá}
-\SetPaperSlogan{''Ciencia y Verdad.''}
+\SetPaperSlogan{''\textit{Ciencia y Verdad}''}
 \SetPaperPrice{SU-PMMV}
 
 \newcommand{\NewsAuthor}[1]{%
@@ -83,9 +82,9 @@
 
 \byline{La Gaceta Galénica}{Moisés Serrano Samudio}
 
-La Gaceta Galénica nace en esta primera edición como una publicación mensual de la coordinación de docencia de la Policlínica Lic. Manuel María Valdés. Es nuestro interés lanzar una edición el primer miércoles de cada mes con temas cortos dirigidos a mantener actualizados a los colegas médicos que desempeñan sus funciones en los distintos servicios de urgencias médico quirúrgicas en instalaciones de primer y segundo nivel de atención en Panamá.
+La Gaceta Galénica nace con esta primera edición como una publicación mensual de la coordinación de docencia de la Policlínica Lic. Manuel María Valdés. Es nuestro interés lanzar una edición el primer miércoles de cada mes con temas cortos dirigidos a mantener actualizados a los colegas médicos que desempeñan sus funciones en los distintos servicios de urgencias médico quirúrgicas en instalaciones de primer y segundo nivel de atención en Panamá.
 
-Se publicará como un boletín digital informativo corto, de una a dos páginas de extensión, que enlazará a una versión web futura, permitiendo así a nuestros lectores ahondar en los temas expuestos. El tema central de la publicación se presentará como una viñeta clínica, a partir del cual se presentarán de manera práctica los aspectos fundamentados en medicina basada en evidencia más actualizados.
+Se publica como un boletín digital informativo corto, de una a dos páginas de extensión distribuido por canales digitales. El tema central de la publicación se presenta acompañado de una viñeta clínica, a partir del cual se presentarán de manera práctica los aspectos más importantes de la patología abordada con su respectiva clase y nivel de evidencia.
 
 Planeamos incluir cápsulas históricas sobre la medicina en Panamá y repasar temas de bioestadística y epidemiología para ofrecer a nuestros lectores herramientas para refrescar la lectura crítica de la literatura médico-científica.
 
@@ -98,15 +97,15 @@ Sin mas preámbulo, esperamos que disfruten de su lectura tanto como nosotros di
 
 Abogado, economista y periodista. Nace en 1907, proveniente de una familia de destacados juristas en el ámbito nacional de los primeros cincuenta años de la República de Panamá.
 
-\begin{wrapfigure}{R}{0.18\textwidth}
+Al Lcdo. Manuel María Valdés, debemos el honor de la creación de la Caja de Seguro Social. La gesta que llevo a la fundación de la institución máxima de la seguridad social en Panamá, tuvo sus albores en 1937 en una reunión en París de Arnulfo Arias Madrid y Manuel María Valdés donde intercambiaban opiniones sobre seguros obligatorios\cite{Pinock95}.
+
+\begin{wrapfigure}{L}{0.18\textwidth}
 	\begin{center}
 		\vspace{-25pt}
 		\includegraphics[width=0.17\textwidth]{mmvaldes.jpg}
 	\end{center}
 	\caption*{Lic. Manuel María Valdés}
 \end{wrapfigure}
-
-Al Lcdo. Manuel María Valdés, debemos el honor de la creación de la Caja de Seguro Social. La gesta que llevo a la fundación de la institución máxima de la seguridad social en Panamá, tuvo sus albores en 1937 en una reunión en París de Arnulfo Arias Madrid y Manuel María Valdés donde intercambiaban opiniones sobre seguros obligatorios\cite{Pinock95}.
 
 Es la habilidad política junto a la orientación técnica de Don Manuel María Valdés y la tracción del Partido Liberal Unido lo que lleva a manos del Presidente Arnulfo Arias Madrid en 1941 a la firma de la Ley 23 del 21 de marzo de ese año, publicada en la Gaceta Oficial No. 8481 de marzo de 1941\cite{Pinock95},\cite{gaceta1941}.
 
@@ -119,17 +118,23 @@ Fallece en 1968, luego de toda una prolífica carrera. Apodado de cariño Nen, p
 
 \headline{Fibrilación atrial: Diagnóstico y manejo}
 
-La fibrilación atrial es una patología que se ve con regular frecuencia en los servicios de urgencias. En mayores de 65 años tiene una incidencia de cerca del 10\% y se asocia a una serie de comorbilidades y predispone al desarrollo de patologías de gran morbimortalidad\cite{brundel_atrial_2022}.
+La fibrilación atrial (AF) es una patología que se ve con regular frecuencia en los servicios de urgencias. En mayores de 65 años tiene una incidencia de cerca del 10\% y se asocia a una serie de comorbilidades y predispone al desarrollo de patologías de gran morbimortalidad como el ictus isquémico y el infarto agudo al miocardio. Se estima una prevalencia para América Latina y El Caribe en 430 de cada 100000 habitantes\cite{brundel_atrial_2022}.
+
+En Panamá, Pezzullo y colab. estimaron que el 0.9\% de la población adulta mayor de 20 años es afectada por la AF y que en el año 2015, la AF representó un costo de 19 millones de Balboas para el sistema de salud\cite{pezzullo2016}.
 
 \begin{boxClinica}
 
-Paciente masculino de 64 años acude al servicio de urgencias por historia de palpitaciones, mareos, debilidad y diaforético. Sus signos vitales son: PA 160/106 mmHg, FC 131 lpm, FR 21 cpm, SpO2 95\%.
+Paciente masculino de 64 años es traído al servicio de urgencias por personal de prehospitalaria por síncope con previa historia de palpitaciones, mareos, debilidad y diaforesis. Sus signos vitales son: PA 160/106 mmHg, FC 131 lpm, FR 21 cpm, SpO2 95\%.
 
 \end{boxClinica}
+
+Dentro del abordaje del paciente presentado en la viñeta clínica anterior, además de la historia clínica se debe realizar un electrocardiograma. El ECG tiene una clase y nivel de evidencia IB y es diagnóstico de AF si un ECG de 12 derivadas o en un trazo de 1 derivación $\geq$ 30 segundos se presentan ondas P no discernibles e intervalos RR irregulares\cite{guiaesc_2021}.
 
 \closearticle
 
 \printbibliography[heading=none]
+
+\closearticle
 
 \end{multicols}
 
