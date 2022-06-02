@@ -16,7 +16,8 @@
 	citecolor={blue!50!black},
 	urlcolor={blue!80!black},
 	%% metadata del PDF generado
-	pdftitle={Gaceta Galénica - V01E01}, %% cambiar el código en cada edición
+	%% estos metadatos se deben actualizar con cada edición
+	pdftitle={Gaceta Galénica - V01E01},
 	pdfsubject={Boletín científico del Servicio de Urgencias de la Policlínica Lic. Manuel María Valdés},
 	pdfauthor={Moisés Serrano Samudio},
 	pdfkeywords={
@@ -41,7 +42,7 @@
 \addbibresource{referencias.bib}
 
 %% Reduce el tamaño de fuente de las referencias
-\renewcommand*{\bibfont}{\footnotesize}
+\renewcommand*{\bibfont}{\scriptsize}
 
 %% ============================================================================
 %% Box para viñetas
@@ -201,7 +202,8 @@ el objetivo de tratamiento es lograr la estabilización hemodinámica,
 controlar los síntomas y prevenir las complicaciones. Dentro de la
 estabilización inicial debemos obtener acceso venoso, O$_{\text{2}}$
 suplementario para mantener saturación $\geq$ 92\% y monitorización cardíaca
-continua.
+continua. Hay también que estar preparado para apoyar la ventilación según
+sea necesario.
 
 Para establecer el diagnóstico del paciente presentado en la viñeta clínica,
 además de la historia clínica y su respectivo examen físico se debe realizar un
@@ -255,12 +257,25 @@ encontramos ante un paciente con FA paroxística, pero que está
 hemodinámicamente inestable. Es prácticamente mandatorio en este punto,
 utilizar el protocolo del ACLS ya que estamos ante un paciente con una
 taquicardia inestable, la recomendación aquí según el protocolo ACLS es
-cardioversión eléctrica inmediata ante la inestabilidad del paciente\cite{aha2020}.
+cardioversión eléctrica inmediata del paciente, considerando la
+sedación previa si fuera necesaria\cite{aha2020}.
 
 % \begin{figure*}[ht]
 % \includegraphics[width=\linewidth]{ecg-fa.png}
 % \caption{ECG 12 derivadas. FA de respuesta ventricular rápida}
 % \end{figure*}
+
+Según la Guía 2020 de fibrilación auricular de la ESC, la recomendación
+con un paciente inestable y con fibrilación atrial es la cardioversión
+eléctrica urgente a la máxima dosis permitidida por el
+desfibrilador\cite{maxdefib19} e iniciar lo antes posible tratamiento
+anticoagulante\cite{guiaesc_2021}, esta recomendación tiene una clase y nivel
+de evidencia IB. Luego de la cardioversión eléctrica se puede considerar
+la administración de amiodarona para el control inmediato de la frecuencia
+cardíaca y esto también puede llevar a una disminución adicional de la
+presión arterial\cite{guiaesc_2021}, esta intervención tiene una clase de
+recomendación IIb y un nivel de evidencia B, teniendo así evidencia
+moderada que la respalde.
 
 Continuando el abordaje de
 este paciente, implementamos la estrategia de la vía ABC\cite{lip_abc_2017}.
