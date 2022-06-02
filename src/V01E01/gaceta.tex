@@ -10,10 +10,20 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \hypersetup{
+	%% colores de enlaces
 	colorlinks,
 	linkcolor={red!50!black},
 	citecolor={blue!50!black},
-	urlcolor={blue!80!black}
+	urlcolor={blue!80!black},
+	%% metadata del PDF generado
+	pdftitle={Gaceta Galénica - V01E01}, %% cambiar el código en cada edición
+	pdfsubject={Boletín científico del Servicio de Urgencias de la Policlínica Lic. Manuel María Valdés},
+	pdfauthor={Moisés Serrano Samudio},
+	pdfkeywords={
+		Manuel María Valdés,
+		fibrilación auricular,
+		cardioversión eléctrica,
+		cardioversión farmacológica}
 }
 
 %% ============================================================================
@@ -245,15 +255,12 @@ encontramos ante un paciente con FA paroxística, pero que está
 hemodinámicamente inestable. Es prácticamente mandatorio en este punto,
 utilizar el protocolo del ACLS ya que estamos ante un paciente con una
 taquicardia inestable, la recomendación aquí según el protocolo ACLS es
-cardioversión eléctrica.
+cardioversión eléctrica inmediata ante la inestabilidad del paciente\cite{aha2020}.
 
-% \begin{wrapfigure}{L}{0.77\textwidth}
-% 	\begin{center}
-% 		\vspace{-25pt}
-% 		\includegraphics[width=0.75\textwidth]{ecg-fa.png}
-% 	\end{center}
-% 	\caption*{ECG 12 derivadas. FA de respuesta ventricular rápida}
-% \end{wrapfigure}
+% \begin{figure*}[ht]
+% \includegraphics[width=\linewidth]{ecg-fa.png}
+% \caption{ECG 12 derivadas. FA de respuesta ventricular rápida}
+% \end{figure*}
 
 Continuando el abordaje de
 este paciente, implementamos la estrategia de la vía ABC\cite{lip_abc_2017}.
