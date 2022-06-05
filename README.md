@@ -43,8 +43,11 @@ El script nos preguntará el volumen y creará el archivo de imagen del cover.
 
 ## Snippets
 
+<<<<<<< HEAD
 **Imágenes anchas**
 
+=======
+>>>>>>> 4873d34692b72a008cde805b96ef04af43bc9f5d
 Para añadir imágenes que ocupan el ancho del manuscrito:
 
     \begin{figure*}[ht]
