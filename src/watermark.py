@@ -10,7 +10,7 @@ import sys
 if len(sys.argv)>1:
     edicion = sys.argv[1]
 else:
-    edicion = input("\x1b[0;33mEscriba el nombre del volumen (ej: V01E01):\x1b[0m ")
+    edicion = input("\x1b[0;33mEscriba el nombre del volumen (ej: V01N01):\x1b[0m ")
 
 def watermarker(path, watermark, output):
     base_pdf = PdfReader(path)

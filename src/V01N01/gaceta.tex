@@ -6,9 +6,11 @@
 \usepackage{microtype}
 \usepackage{newspaper}
 \usepackage{multicol}
+\usepackage{multirow}
+\usepackage{array}
 \usepackage{url}
 \usepackage{hyperref}
-\usepackage{xcolor}
+\usepackage[table]{xcolor}
 \hypersetup{
 	%% colores de enlaces
 	colorlinks,
@@ -273,6 +275,36 @@ presión arterial\cite{guiaesc_2021}, esta intervención tiene una clase de
 recomendación IIb y un nivel de evidencia B, teniendo así evidencia
 moderada que la respalde.
 
+\setlength{\tabcolsep}{0.5em} % for the horizontal padding
+{\renewcommand{\arraystretch}{1.5}% for the vertical padding
+\begin{table*}[ht]
+  \footnotesize
+	\centering
+	\begin{tabular}{ >{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{4cm} >{\centering\arraybackslash}m{4cm} >{\centering\arraybackslash}m{5cm}}
+		% \hline
+		\textbf{Medicamento} & \textbf{Administración IV} & \textbf{Dosis de mantenimiento oral} & \textbf{Contraindicaciones} \\
+		\hline
+		\multicolumn{4}{ c }{ \cellcolor[HTML]{CCCCCC} Beta bloqueadores} \\
+		\hline
+		Carvedilol & NA & 3,125-25 mg BID & \multirow{4}{5cm}{\centering{Contraindicado en crisis de asma y falla cardíaca aguda}} \\
+		Metoprolol tartrato & 2,5-5 mg en bolo c 5 min hasta 15 mg & 12,5-200 mg BID &\\
+    Metoprolol succinato & NA & 50-400 mg diario &\\
+    Esmolol & 500 $\mu$g/kg IV en bolo en 1 minuto; seguido de 50-300 $\mu$g/kg/min & NA &\\
+		\hline
+    \multicolumn{4}{ c }{ \cellcolor[HTML]{CCCCCC} Bloqueadores de canales de calcio no dihidropiridínicos} \\
+    \hline
+    Diltiazem & 0,25 mg/kg IV en 5 minutos, luego 5-15 mg/hora & Liberación inmediata 30-120 mg QID. Liberación extendida 120-480 mg diario & \multirow{2}{5cm}{\centering{Contraindicado en falla cardíaca con fracción de eyección reducida}} \\
+    Verapamilo & 5-10 mg bolo IV en 5 minutos & Liberación inmediata: 40-160 mg TID. Liberación extendida: 120-480 mg diario & \\
+    \hline
+    \multicolumn{4}{ c }{ \cellcolor[HTML]{CCCCCC} Otros } \\
+    \hline
+    Digoxina & 0,25 mg IV cada 6 horas hasta un máximo de 1,5 mg en 24 horas & 0,125-0,25 mg diarios & Contraindicada en falla renal aguda y crónica \\
+    Amiodarona & 150 mg IV en 10 min, seguido de 1 mg/min IV por 6 horas, luego 0,5 mg/min IV por 18 horas & 100-200 mg diarios luego de dosis de carga & Contraindicada en enfermedad tiroidea \\
+	\end{tabular}
+	\caption{Medicamentos para control de FA}
+	\label{tab:medfa}
+\end{table*}
+
 Si el paciente no estuviera hemodinámicamente inestable y con una presión
 arterial limítrofe y frecuencia cardíaca inferior a 150 lpm, no se requerirá
 una cardioversión eléctrica inmediata, pero hay que considerar que el uso de
@@ -281,15 +313,16 @@ se pueden emplear fluidoterapia IV para elevar la PA lo suficiente para emplear
 la amiodarona, con un seguimiento estrecho del paciente. Se podría emplear
 también bolos de fenilefrina o diltiazem para evitar la
 hipotensión\cite{lee2011}, sin embargo, estos no están disponibles en nuestro
-medio.
+medio al menos a nivel institucional.
 
 Mientras abordamos este paciente debemos ir buscando las causas del episodio
 de fibrilación auricular, ya que se sabe que un gran porcentaje de estos
 pacientes tienen una patología subyacente\cite{comorbfa}.
+
 En los exámenes de laboratorio a solicitar con un paciente con FA tenemos el
 hemograma completo, con el interés de documentar procesos infecciosos que
-puedan descompensar una patología de fondo como falla cardíaca y lleven a la
-aparición de un episodio de FA; una química sanguínea que incluya electrolitos
+puedan descompensar una patología de fondo como falla cardíaca y lleven a un
+episodio de FA; una química sanguínea que incluya electrolitos
 séricos, glicemia, pruebas de función renal y hepática; niveles séricos de
 magnesio, ya que se ha documentado que niveles bajos tienen relación con la
 aparición de paroxismos de FA; niveles de TSH, ya que el hipertiroidismo
@@ -301,12 +334,36 @@ Entre los estudios de imagen, la radiografía PA de tórax debe ser realizada
 en todo paciente con FA para evaluar comorbilidades como neumonía, falla
 cardíaca, cardiomegalia y la presencia de marcapasos cardíaco.
 
-La ecocardiografía se recomienda de manera ambulatoria para pacientes con FA
-diagnosticada por primera vez. La ecocardiografía transtorácica se recomienda
-en pacientes con más de 48 horas de síntomas y más de 3 semanas sin ser
-anticoagulados\cite{ecoamb19}. No se recomienda realizar ecocardiografía en
-pacientes que han sido cardiovertidos y anticoagulados, pues el riesgo de
-desarrollo de tromboembolismo es menor al 1\%\cite{eco13}.
+Existe un debate entre las estrategias de abordaje de pacientes con FA
+hemodinámicamente estables, ya que hay estrategias de control del ritmo
+cardíaco, para la frecuencia cardíaca y el manejo expectante. Esta
+controversia surge a raíz de los ensayos AFFIRM\cite{AFFIRM} y RACE\cite{RACE}.
+
+En el ensayo AFFIRM, se concluye que hay beneficios en el control de la
+frecuencia cardíaca mientras que el control del ritmo no ofrece ventajas en la
+supervivencia de, sugiriendo así que el control de la frecuencia cardíaca es un
+mejor abordaje en pacientes con FA. Por otro lado en el ensayo RACE se sugiere
+que el control de la frecuencia no es inferior al control del ritmo cuando se
+evalua morbilidad y mortalidad en FA. Es importante destacar que ambos estudios
+se realizaron en pacientes hospitalizados.
+
+Desde que se publicaron los ensayos AFFIRM y RACE en 2002, se han realizado
+estudios que desafían estos hallazgos y establecen que el control de la
+frecuencia cardíaca se asocia con un incremento en los efectos adversos y
+mortalidad de pacientes con FA\cite{malya}. En 2019, se publico el estudio
+multicéntrico HERMES-AF, que fue realizado en pacientes en servicios de
+urgencias se encontró que la tasa de alivio de síntomas fue mayor en el grupo
+donde se emplearon estrategias de control del ritmo y el número de admisiones
+hospitalarias fue reducido\cite{HERMESAF}. En pacientes con FA < 48 horas y
+edad < 65 años es preferible controlar el ritmo; mientras que, en pacientes con
+falla cardíaca, enfermedad valvular, hipertensión y FA permamente se debe
+controlar la frecuencia cardíaca\cite{malya}.
+
+Se considera, en el escenario del servicio de urgencias, que para disminuir
+el tiempo de estancia se pueden emplear estrategias para control del ritmo,
+en lugar de estrategias de control de la frecuencia cardíaca ya que se asocian
+a disminución en el número de admisiones hospitalarias y en general son más
+seguras que las estrategias de control de la frecuencia cardíaca.
 
 Continuando el abordaje de este paciente, implementamos la estrategia de la vía ABC\cite{lip_abc_2017}. «A», anticoagulacion / prevención del ictus; «B», buen control de los síntomas; «C», control de los factores de riesgo cardiovascular y comorbilidades.
 
@@ -327,6 +384,13 @@ uso de dispositivos \emph{wereables} como relojes o bandas electrónicas que
 con sus algoritmos de fotopletismografía ofrecen también una buena
 sensibilidad y especificidad, incluso con clase y nivel de evidencia
 IB\cite{guiaesc_2021}.
+
+La ecocardiografía se recomienda de manera ambulatoria para pacientes con FA
+diagnosticada por primera vez. La ecocardiografía transtorácica se recomienda
+en pacientes con más de 48 horas de síntomas y más de 3 semanas sin ser
+anticoagulados\cite{ecoamb19}. No se recomienda realizar ecocardiografía en
+pacientes que han sido cardiovertidos y anticoagulados, pues el riesgo de
+desarrollo de tromboembolismo es menor al 1\%\cite{eco13}.
 
 \end{multicols}
 
