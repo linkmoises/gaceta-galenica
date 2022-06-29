@@ -32,9 +32,13 @@
 %% ============================================================================
 %% Referencias
 %% ============================================================================
+\usepackage{csquotes}
 \usepackage[
 	backend=biber,
 	style=nejm,
+  minnames=3,
+  maxnames=5,
+  articledoi=false,
 ]{biblatex}
 
 %% Hace que las referencias aparezcan como superíndices
@@ -82,7 +86,8 @@
 
 \newcommand{\NewsAuthor}[1]{%
 	\hfill Por \textsc{#1} \vspace{4pt}
-	\par \normalfont}
+	\par \normalfont
+}
 
 %%
 \usepackage{newspaper-mod}
@@ -276,7 +281,7 @@ recomendación IIb y un nivel de evidencia B, teniendo así evidencia
 moderada que la respalde.
 
 \setlength{\tabcolsep}{0.5em} % for the horizontal padding
-{\renewcommand{\arraystretch}{1.5}% for the vertical padding
+{\renewcommand{\arraystretch}{1.5}} % for the vertical padding
 \begin{table*}[ht]
   \footnotesize
 	\centering
@@ -358,6 +363,31 @@ hospitalarias fue reducido\cite{HERMESAF}. En pacientes con FA < 48 horas y
 edad < 65 años es preferible controlar el ritmo; mientras que, en pacientes con
 falla cardíaca, enfermedad valvular, hipertensión y FA permamente se debe
 controlar la frecuencia cardíaca\cite{malya}.
+
+Para el control del ritmo, se puede utilizar cardioversión farmacológica o
+eléctrica. En 2020, se publicaron los resultados de un ensayo parcialmente
+aleatorizado realizado en servicios de emergencias en Canadá donde se comparaba
+contra placebo el uso de procainamida y cardioversión eléctrica en pacientes
+con FA\cite{OTTAWA}. Este trabajo es consistente con los hallazgos del
+Protocolo de Ottawa que se resume en la tabla X.
+
+\begin{center}
+\footnotesize
+\centering
+  \begin{tabular}{ p{0.9\linewidth} }
+  \textbf{Protocolo agresivo de Ottawa} \\
+  \hline
+  \cellcolor[HTML]{CCCCCC} Cardioversión farmacológica \\
+  \hline
+  1 g de procainamida IV (administrar en 60 min, detenerse si PAS < 100 mmHg) \\
+  \hline
+  \cellcolor[HTML]{CCCCCC} Cardioversión eléctrica \\
+  \hline
+  Considerar nada por boca por 6 horas \\
+  Administrar sedación y analgesia para el procedimiento  \\
+  Empezar a 200 J sincronizado bifásico \\
+\end{tabular}
+\end{center}
 
 Se considera, en el escenario del servicio de urgencias, que para disminuir
 el tiempo de estancia se pueden emplear estrategias para control del ritmo,
