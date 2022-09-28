@@ -1,0 +1,160 @@
+\documentclass[a4paper]{article}
+
+\usepackage{lipsum} %% eliminar al crear nuevo número
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{newspaper}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\hypersetup{
+	%% colores de enlaces
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black},
+	%% metadata del PDF generado
+	%% estos metadatos se deben actualizar con cada edición
+	pdftitle={Prueba - Gaceta Galénica - V00E00},
+	pdfsubject={Boletín científico del Servicio de Urgencias de la Policlínica Lic. Manuel María Valdés},
+	pdfauthor={Moisés Serrano Samudio},
+	pdfkeywords={
+		palabras clave, %% añadir palabras clave
+    }
+}
+
+%% ============================================================================
+%% Referencias
+%% ============================================================================
+\usepackage{csquotes}
+\usepackage[
+	backend=biber,
+	style=nejm,
+  minnames=3,
+  maxnames=5,
+  articledoi=false,
+]{biblatex}
+
+%% Hace que las referencias aparezcan como superíndices
+\let\cite=\supercite
+
+%% Añade el documento con referencias bibtex
+\addbibresource{referencias.bib}
+
+%% Reduce el tamaño de fuente de las referencias
+\renewcommand*{\bibfont}{\scriptsize}
+
+%% ============================================================================
+%% Box para viñetas
+%% ============================================================================
+\usepackage[many]{tcolorbox}
+\newtcolorbox{boxClinica}{
+	sharpish corners, % better drop shadow
+	boxrule = 0pt,
+	toprule = 1.5pt, % top rule weight
+	enhanced,
+	%% {xshift}{yshift}{offset}{step}{options}
+	fuzzy shadow = {0pt}{-2pt}{-0.5pt}{0.5pt}{black!35}
+}
+
+%% ============================================================================
+%% Imágenes
+%% ============================================================================
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\captionsetup[figure]{font=footnotesize}
+
+%% ============================================================================
+%% Cabecera
+%% ============================================================================
+\date{\today}
+\currentvolume{0}
+\currentissue{0}
+\SetPaperName{Gaceta Galénica}
+\SetHeaderName{Gaceta Galénica}
+\SetPaperLocation{Ciudad de Panamá}
+\SetPaperSlogan{''\textit{Ciencia, Verdad, Academia}''}
+\SetPaperPrice{SU-PMMV}
+
+\newcommand{\NewsAuthor}[1]{%
+	\hfill Por \textsc{#1} \vspace{4pt}
+	\par \normalfont
+}
+
+%%
+\usepackage{newspaper-mod}
+%%
+\renewcommand{\headlinestyle}{\itshape\Large\lsstyle}
+% \renewcommand{\bylinestyle}{\bfseries\Large\raggedright}
+%%
+
+%%%%%%%%%  Front matter   %%%%%%%%%%
+
+
+\begin{document}
+
+\maketitle
+
+\begin{multicols}{3}
+
+
+\byline{Editorial}{Nombre Apellido}
+
+\lipsum[1-2]
+
+\closearticle
+
+
+\headline{¿Quién fue X personaje?}
+
+\lipsum[3]
+
+\begin{wrapfigure}{L}{0.18\textwidth}
+	\begin{center}
+		\vspace{-10pt}
+		\includegraphics[width=0.17\textwidth]{prueba.jpg}
+	\end{center}
+	\caption*{Personaje Apellido}
+\end{wrapfigure}
+
+\lipsum[4-5]
+
+\closearticle
+
+
+\headline{Artículo principal}
+
+\lipsum[6]
+
+\begin{boxClinica}
+
+Paciente masculino de 64 años es traído al servicio de urgencias por personal
+de prehospitalaria por síncope con previa historia de palpitaciones, mareos,
+debilidad y diaforesis. Sus signos vitales son: PA 160/106 mmHg, FC 141 lpm,
+FR 21 cpm, SpO2 92\%, peso 125 kg, estatura 1,65 m. Tiene como antecedentes
+importantes tabaquismo y dislipidemia. Se encuentra desorientado y disneico.
+
+\end{boxClinica}
+
+\lipsum[8-12]
+
+\end{multicols}
+
+\closearticle
+
+\begin{multicols}{3}
+
+\printbibliography[heading=none]
+
+\end{multicols}
+
+
+\end{document}
