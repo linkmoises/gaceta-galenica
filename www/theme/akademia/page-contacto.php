@@ -8,16 +8,16 @@
   		<!-- Content
   		============================================= -->
   		<section id="content">
-  			<div class="content-wrap py-0">
+  			<div class="content-wrap py-0" style="background: linear-gradient(to right, rgba(255,255,255,0.75), rgba(255,255,255,1)), url('images/1949-pollock-number-16.jpg') center center /cover;">
 
   				<div class="row align-items-stretch justify-content-between block-contact-1 g-0">
 
   					<div class="col-md-6" data-animate="fadeInLeft fast">
-  						<div class="dark h-100 min-vh-md-100 d-flex flex-column justify-content-between p-5" style="background: url('images/1949-pollock-number-16.jpg') center center /cover"></div>
+  						<div class="dark h-100 min-vh-md-75 d-flex flex-column justify-content-between p-5" style="background: url('images/1949-pollock-number-16.jpg') center center /cover"></div>
   					</div>
 
   					<div class="col-md-6 p-5 px-lg-6 d-flex flex-column align-self-center">
-  						<div class="form-widget">
+  						<div class="form-widget" data-animate="fadeInUp">
 
   							<div class="form-result"></div>
 
@@ -33,11 +33,6 @@
   									<div class="col-md-6 form-group mb-5">
   										<label for="template-contactform-name">Name: <small class="text-danger">*</small></label>
   										<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control required" placeholder="John Doe" />
-  									</div>
-
-  									<div class="col-md-6 form-group mb-5">
-  										<label for="template-contactform-phone">Phone: <small class="text-danger">*</small></label>
-  										<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="form-control required" placeholder="+00 111 232 11 33" />
   									</div>
 
   									<div class="w-100"></div>
