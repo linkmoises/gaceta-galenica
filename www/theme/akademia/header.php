@@ -22,7 +22,7 @@
 
   <!-- Document Title
   ============================================= -->
-  <title>Gaceta Galénica</title>
+  <title><?php bloginfo("name"); ?> - <?php bloginfo("description"); ?></title>
 
   <!-- Favicons
   ============================================= -->
