@@ -49,7 +49,7 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="index.html" class="standard-logo" data-dark-logo="images/titulo-w.png"><img src="images/logo.png" alt="Canvas Logo"></a>
+							<a href="/" class="standard-logo" data-dark-logo="images/titulo-w.png"><img src="images/logo.png" alt="Logo Gaceta Galénica"></a>
 							<!--<a href="index.html" class="retina-logo" data-dark-logo="one-page/images/canvasone-dark@2x.png"><img src="one-page/images/canvasone@2x.png" alt="Canvas Logo"></a>-->
 						</div><!-- #logo end -->
 

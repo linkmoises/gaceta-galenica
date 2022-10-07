@@ -6,17 +6,13 @@
 
       <div id="copyrights">
         <div class="container center clearfix">
-          &#127279; Algunos derechos reservados CC-BY-NC-SA
+          Coordinación de Docencia del Servicio de Urgencias. Policlínica Lic. Manuel María Valdés. &#127279; Contenido bajo licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank">CC-BY-NC-SA 2022</a>.
         </div>
       </div>
 
     </footer><!-- #footer end -->
 
   </div><!-- #wrapper end -->
-
-  <!-- Go To Top
-  ============================================= -->
-  <div id="gotoTop" class="icon-angle-up"></div>
 
   <!-- JavaScripts
   ============================================= -->
