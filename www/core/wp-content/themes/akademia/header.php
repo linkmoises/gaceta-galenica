@@ -9,15 +9,15 @@
   <!-- Stylesheets
   ============================================= -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700|Playfair+Display&display=swap" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
-  <link rel="stylesheet" href="css/swiper.css" type="text/css" />
-  <link rel="stylesheet" href="css/onepage.css" type="text/css" />
-  <link rel="stylesheet" href="css/dark.css" type="text/css" />
-  <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-  <link rel="stylesheet" href="css/animate.css" type="text/css" />
-  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-  <link rel="stylesheet" href="css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('url'); ?>/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('url'); ?>/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('url'); ?>/css/swiper.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('url'); ?>/css/onepage.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('url'); ?>/css/dark.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('url'); ?>/css/font-icons.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('url'); ?>/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('url'); ?>/css/magnific-popup.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('url'); ?>/css/custom.css" type="text/css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Document Title
@@ -26,10 +26,10 @@
 
   <!-- Favicons
   ============================================= -->
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="<?php bloginfo('url'); ?>/favicon.ico" sizes="any">
+  <link rel="icon" href="<?php bloginfo('url'); ?>/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="<?php bloginfo('url'); ?>/apple-touch-icon.png">
+  <link rel="manifest" href="<?php bloginfo('url'); ?>/manifest.webmanifest">
 
 </head>
 
@@ -49,8 +49,8 @@
             <!-- Logo
             ============================================= -->
 						<div id="logo">
-							<a href="/" class="standard-logo" data-mobile-logo="images/logo.png" data-sticky-logo="images/logo.png"><img src="images/logo.png" alt="Logo Gaceta Galénica"></a>
-							<a href="/" class="retina-logo" data-mobile-logo="images/logo.png" data-sticky-logo="images/logo.png"><img src="images/logo.png" alt="Logo Gaceta Galénica"></a>
+							<a href="<?php bloginfo('url'); ?>" class="standard-logo" data-mobile-logo="<?php bloginfo('url'); ?>/images/logo.png" data-sticky-logo="<?php bloginfo('url'); ?>/images/logo.png"><img src="<?php bloginfo('url'); ?>/images/logo.png" alt="Logo Gaceta Galénica"></a>
+							<a href="<?php bloginfo('url'); ?>" class="retina-logo" data-mobile-logo="<?php bloginfo('url'); ?>/images/logo.png" data-sticky-logo="<?php bloginfo('url'); ?>/images/logo.png"><img src="<?php bloginfo('url'); ?>/images/logo.png" alt="Logo Gaceta Galénica"></a>
 						</div><!-- #logo end -->
 
 						<div id="primary-menu-trigger">
@@ -65,11 +65,11 @@
 								<li class="menu-item">
 									<a href="#" class="menu-link" data-href="#wrapper"><div>Inicio</div></a>
 								</li>
-                <li class="menu-item">
+                <!-- <li class="menu-item">
 									<a href="#" class="menu-link" data-href="#section-archivo"><div>Archivo</div></a>
-								</li>
+								</li> -->
 								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-blog"><div>Editor</div></a>
+									<a href="#" class="menu-link" data-href="#section-blog"><div>Sobre la Gaceta</div></a>
 								</li>
 								<li class="menu-item">
 									<a href="#" class="menu-link" data-href="#section-contact"><div>Contacto</div></a>
