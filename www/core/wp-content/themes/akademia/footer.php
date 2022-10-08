@@ -6,7 +6,7 @@
 
       <div id="copyrights">
         <div class="container center clearfix">
-          Coordinación de Docencia del Servicio de Urgencias. Policlínica Lic. Manuel María Valdés. &#127279; Contenido bajo licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank">CC-BY-NC-SA 2022</a>.
+          &#127279; Contenido bajo licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank">CC-BY-NC-SA</a> 2022. ISSN XXXX-XXXX
         </div>
       </div>
 

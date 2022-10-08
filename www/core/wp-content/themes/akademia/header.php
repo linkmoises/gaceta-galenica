@@ -63,16 +63,19 @@
 
 							<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#wrapper"><div>Inicio</div></a>
+									<a href="<?php bloginfo('url') ?>" class="menu-link"><div>Inicio</div></a>
 								</li>
                 <!-- <li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-archivo"><div>Archivo</div></a>
+									<a href="#" class="menu-link"><div>Archivo</div></a>
+								</li> -->
+                <!-- <li class="menu-item">
+									<a href="#" class="menu-link"><div>Arte</div></a>
 								</li> -->
 								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-blog"><div>Sobre la Gaceta</div></a>
+									<a href="<?php bloginfo('url') ?>/acerca-de/" class="menu-link"><div>Sobre la Gaceta</div></a>
 								</li>
 								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-contact"><div>Contacto</div></a>
+									<a href="<?php bloginfo('url') ?>/contacto/" class="menu-link"><div>Contacto</div></a>
 								</li>
 							</ul>
 
