@@ -1,8 +1,8 @@
 # La Gaceta Galénica
 
 Es un boletín científico editado por la Coordinación de Docencia de la
-Policlínica Lic. Manuel María Valdés, en Panamá. Tiene una publicación mensual,
-el primer miércoles de cada mes. El contenido está mayormente dirigido a
+Policlínica Lic. Manuel María Valdés, en Panamá. Tiene una publicación bimestral,
+el primer miércoles de cada mes par. El contenido está mayormente dirigido a
 médicos generales que laboran en los servicios de urgencias de instalaciones
 del 1er y 2do nivel de atención.
 
